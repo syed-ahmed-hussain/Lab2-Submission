@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Browser</title>
+<style>
+body {
+	background-color:black;
+}
+div.big {
+	position:absolute;
+	display: none;
+	z-index:0;
+	width:800px;
+	height:300px;
+	top:220px;
+	left:500px;
+
+}
+ 
+div.small {
+	position:absolute;
+	visibility:visible;
+	z-index:0;
+	width:50%;
+	max-width: 50%
+	height:10%;
+	max-height: 10%;
+	top: 100px;
+	left: 200px
+}
+
+img.small {
+	max-width:15%; 
+	max-height:20%;
+}
+
+img.big{
+	max-width:300%; 
+	max-height:300%;
+}
+
+#big-div1:target {
+	display:block;
+}
+
+#big-div2:target {
+	display:block;
+}
+
+#big-div3:target {
+	display:block;
+}
+
+#big-div4:target {
+	display:block;
+}
+
+#big-div5:target {
+	display:block;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Div of small images -->
+
+<div class="small">
+<a href="#big-div1"><img src="images/citynomadi_logo.png" class="small"></a>
+<a href="#big-div2"><img src="images/my-car.png" class="small"></a>
+<a href="#big-div3"><img src="images/heyjoemusique.jpg" class="small"></a>
+<a href="#big-div4"><img src="images/motto.png" class="small"></a>
+<a href="#big-div5"><img src="images/ship.jpg" class="small"></a>
+</div>
+
+<!-- Bigger divs start here -->
+
+<div ID="big-div1" class="big" style="dispaly:block">	
+<img src="images/citynomadi_logo.png" class="big">
+</div>
+
+<div ID="big-div2" class="big">	
+<img src="images/my-car.png" class="big">
+</div>
+
+<div ID="big-div3" class="big" >	
+<img src="images/heyjoemusique.jpg" class="big">
+</div>
+
+<div ID="big-div4" class="big">	
+<img src="images/motto.png" class="big">
+</div>
+
+<div ID="big-div5" class="big">	
+<img src="images/ship.jpg" class="big">
+</div>
+
+</body>
+
+</html
